@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Rose", cursive;
+}
+
+:root {
+  --defaultPadding: 2rem 4rem;
+}
+
+.container {
+  height: 100vh;
+  background: linear-gradient(rgba(12, 25, 54, 0.75), rgba(26, 39, 60, 0.82)),
+    url(./assets/pexels-maxyne-barcel-10402282\ 1.png);
+  background-repeat: no-repeat;
+  padding: var(--defaultPadding);
+  background-size: cover;
+}
+
+/* ------------------------------ */
+/* ---------- NAVBAR ------------ */
+/* ------------------------------ */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.list-item {
+  list-style: none;
+  color: #c59c3a;
+  margin: 0 35px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.button-small {
+  background-color: #ff505f;
+  color: #ffffff;
+  border: none;
+  padding: 13px 40px;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+/* ------------------------------ */
+/* ---------- HERO ------------ */
+/* ------------------------------ */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.hero-heading {
+  color: #ffc233;
+  font-size: 89px;
+  text-align: center;
+  padding: 5px 50px;
+  font-family: "Dela Gothic One", cursive;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.button-large {
+  background-color: #ff505f;
+  color: #ffffff;
+  border: none;
+  padding: 15px 50px;
+  font-size: 29px;
+  cursor: pointer;
+  margin-top: 4rem;
+}
+
+.bottom {
+  position: fixed;
+  bottom: 40px;
+  right: 60px;
+}
+
+img[alt="bottom-logo"] {
+  height: 120px;
+}
+
+/* Extra feture ------------ */
+
+.list-item:hover {
+  border-bottom: 2px solid;
+}
+
+.button-small:hover {
+  transition: 0.7s;
+  background-color: #a51824;
+}
+.button-large:hover {
+  transition: 0.7s;
+  background-color: #a51824;
+}
